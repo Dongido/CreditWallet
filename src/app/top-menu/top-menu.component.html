@@ -1,0 +1,25 @@
+<nav>
+    <a class="sidenav-button"><i class="fas fa-bars" aria-hidden="true" (click)="inputSideNav.toggle()"></i></a>
+    <span class="navbar-brand">Good Morning, <span class="logged-user">Gideon</span> </span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="true">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu">
+                    <div class="avatar">
+                        <img src="" alt="User image">
+                    </div>
+                    Gideon Gideoti
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownmenuLink">
+                    <a class="dropdown-item">Profile</a>
+                    <a class="dropdown-item">Account</a>
+                    <a class="dropdown-item">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
