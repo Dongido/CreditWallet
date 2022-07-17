@@ -5,11 +5,11 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static('/credit-wallet/dist/'));
+app.use(express.static('./dist/credit-wallet'));
 
-app.get('/*', (req, res) => {
-  res.sendFile('index.html', { root: 'credit-wallet/dist/' });
-});
+app.get('/*', (req, res) =>
+    res.sendFile('index.html', {root: 'dist/credit-wallet/'}),
+);
 
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);
