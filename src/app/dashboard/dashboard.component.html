@@ -65,19 +65,59 @@
 
         <div class="row">
             <div class="col-md-6">
-                <mat-card>
-                    <mat-card-content>
-                      <mat-progress-spinner
-                          class="example-margin"
-                          [color]="color"
-                          [mode]="mode"
-                          [value]="value">
-                      </mat-progress-spinner>
-                    </mat-card-content>
-                  </mat-card>
+                <div class="target-position">
+                    <h3>Target positions for July 2022</h3>
+                    <mat-card>
+                        <mat-card-content>
+                          <mat-progress-spinner
+                              class="example-margin"
+                              [color]="color"
+                              [mode]="mode"
+                              [value]="value">
+                          </mat-progress-spinner>
+                        </mat-card-content>
+                    </mat-card>
+                    <div class="details">
+                        <ul>
+                            <li><span class="dot"></span><span class="desc">Total amount -</span> <span class="desc-amt">780,9909</span></li>
+                            <li><span class="dot alt-dot"></span><span class="desc">Loan disbursed -</span> <span class="desc-amt">780,9909</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="col-md-6">
-                data
+                <div class="disbursement-rep">
+                    <h3>Disbursement Report</h3>
+
+                    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+                        <!-- Day Column -->
+                        <ng-container matColumnDef="day">
+                          <th mat-header-cell *matHeaderCellDef> Day </th>
+                          <td mat-cell *matCellDef="let element"> {{element.day}} </td>
+                        </ng-container>
+                      
+                        <!-- Number of loans Column -->
+                        <ng-container matColumnDef="noOfLoan">
+                          <th mat-header-cell *matHeaderCellDef> Number of loans </th>
+                          <td mat-cell *matCellDef="let element"> {{element.noOfLoan}} </td>
+                        </ng-container>
+                      
+                        <!-- Amount Column -->
+                        <ng-container matColumnDef="amount">
+                          <th mat-header-cell *matHeaderCellDef> Amount </th>
+                          <td mat-cell *matCellDef="let element"> {{element.amount}} </td>
+                        </ng-container>
+                      
+                        <!-- Index Column -->
+                        <ng-container matColumnDef="index">
+                          <th mat-header-cell *matHeaderCellDef> Index </th>
+                          <td mat-cell *matCellDef="let element"> {{element.index}} </td>
+                        </ng-container>
+                      
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                      </table>                      
+                </div>
             </div>
         </div>
     </div>

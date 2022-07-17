@@ -28,3 +28,9 @@ body {
 .mat-drawer-container {
     background-color: #fff;
 }
+table{
+    width: 100%;
+}
+ul{
+    list-style: none;
+}

@@ -8,6 +8,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { TopMenuComponent } from './top-menu/top-menu.component';
+import {MatTableModule} from '@angular/material/table';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { TopMenuComponent } from './top-menu/top-menu.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatTableModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent],
