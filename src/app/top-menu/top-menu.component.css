@@ -16,3 +16,33 @@ nav .navbar-brand{
 nav .logged-user{
     color: #828282;
 }
+a.sidenav-button{
+    color: rgba(255, 255, 255, .5);
+    transition: all .3s ease 0s;
+    display: inline;
+    margin-right: 10px;
+}
+a.sidenav-button:hover{
+    color: rgba(255, 255, 255, .8);
+    transition: all .3s ease 0s;
+}
+.current-date{
+    display: block;
+    padding: 0.9rem 1rem;
+    color: #333333;
+    font-size: 16px;
+}
+.nav-link {
+    color: #333333 !important;
+}
+.navbar .avatar{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.navbar .avatar img{
+    width: 100%;
+}

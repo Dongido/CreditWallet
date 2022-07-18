@@ -1,4 +1,4 @@
-<nav>
+<nav class="navbar navbar-expand-lg">
     <a class="sidenav-button"><i class="fas fa-bars" aria-hidden="true" (click)="inputSideNav.toggle()"></i></a>
     <span class="navbar-brand">Good Morning, <span class="logged-user">Gideon</span> </span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="true">
@@ -6,13 +6,15 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item current-date">
+                July 14, 2022
+            </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownmenuLink">
                     <div class="avatar">
-                        <img src="" alt="User image">
+                        <img src="assets/img/avatar.png" alt="User image">
                     </div>
-                    Gideon Gideoti
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownmenuLink">
                     <a class="dropdown-item">Profile</a>
