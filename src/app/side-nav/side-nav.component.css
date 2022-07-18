@@ -1,11 +1,15 @@
 .sidenav{
     height: 100%;
-    width: 220px;
+    width: 210px;
     display: block;
     background: #FEE9DF;
     border: none;
     transition: .5s cubic-bezier(.0685, .0473, .346, 1);
-    margin-right: 0;
+}
+.sidenav-content{
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .logo {
     position: relative;
@@ -40,6 +44,7 @@
 .nav-menu{
     list-style: none;
     margin-left: 0;
+    margin-right: 0;
     padding: 0;
 }
 .nav-menu li>a {
@@ -60,7 +65,7 @@
 }
 .nav-menu li>a:hover, .nav-menu li>a:hover i
 {
-    color: #eee;
+    opacity: .6;
     transition: all .3s ease 0s;
 }
 .nav-menu li.active>a {
@@ -75,4 +80,55 @@
     top: 17px;
     border-radius: 50%;
     background: #ffffff;
+}
+.nav-menu li .sub-menu{
+    padding: 6px 6px 14px 10px;
+    margin-top: -10px;
+    background-color: #333;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    height: 100%;
+}
+.nav-menu li .sub-menu li a{
+    font-size: 14px;
+    color: #fff;
+    white-space: nowrap;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+.nav-menu li .sub-menu li a:hover{
+    opacity: 1;
+}
+.nav-menu li .sub-menu .sub-menu-title{
+    font-size: 14px;
+    color: #F56B2A;
+    white-space: nowrap;
+    padding: 40px 30px;
+}
+.nav-menu li .sub-menu .sub-menu-title i{
+    float: right;
+}
+.sub-menu-overview{
+    padding-left: 30px;
+    color: #F56B2A;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+.sidenav.close li .sub-menu{
+    position: absolute;
+    left: 100%;
+    top: -10;
+    margin-top: 0;
+    padding: 80px 5px;
+    border-radius: 0 6px 6px 0;
+    transition: all 0.4s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+.sidenav.close li:hover .sub-menu{
+    top: 0;
+    opacity: 1;
+    pointer-events: auto;
 }
