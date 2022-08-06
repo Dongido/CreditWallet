@@ -4,38 +4,46 @@ nav {
     width: 100%;
     margin-left: 0;
 }
-nav .sidenav-button{
+
+nav .sidenav-button {
     font-size: 25px;
     color: #333333;
     margin-right: 35px;
 }
-nav .navbar-brand{
+
+nav .navbar-brand {
     font-size: 20px;
     color: #333333;
 }
-nav .logged-user{
+
+nav .logged-user {
     color: #828282;
 }
-a.sidenav-button{
+
+a.sidenav-button {
     color: rgba(255, 255, 255, .5);
     transition: all .3s ease 0s;
     display: inline;
     margin-right: 10px;
 }
-a.sidenav-button:hover{
+
+a.sidenav-button:hover {
     color: rgba(255, 255, 255, .8);
     transition: all .3s ease 0s;
 }
-.current-date{
+
+.current-date {
     display: block;
     padding: 0.9rem 1rem;
     color: #333333;
     font-size: 16px;
 }
+
 .nav-link {
     color: #333333 !important;
 }
-.navbar .avatar{
+
+.navbar .avatar {
     width: 30px;
     height: 30px;
     display: inline-block;
@@ -43,6 +51,34 @@ a.sidenav-button:hover{
     vertical-align: middle;
     border-radius: 50%;
 }
-.navbar .avatar img{
-    width: 100%;
+
+.navbar .avatar img {
+    width: 30px;
+    height: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    nav .navbar-brand {
+        font-size: 12px;
+    }
+    nav .sidenav-button {
+        margin-right: 8px;
+    }
+    .current-date {
+        padding: 0.9rem 0.5rem;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    nav .navbar-brand {
+        font-size: 9px;
+    }
+    nav .sidenav-button {
+        margin-right: 3px;
+    }
+    .current-date {
+        padding: 0.9rem 0.1rem;
+        font-size: 9px;
+    }
 }

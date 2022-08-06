@@ -1,27 +1,26 @@
-<nav class="navbar navbar-expand-lg">
-    <a class="sidenav-button"><i class="fas fa-bars" aria-hidden="true" (click)="inputSideNav.toggle()"></i></a>
-    <span class="navbar-brand">Good Morning, <span class="logged-user">Gideon</span> </span>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="true">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<nav class="navbar navbar-expand navbar-dark">
+    <div class="container-fluid">
+        <a class="sidenav-button"><i class="fas fa-bars" aria-hidden="true" (click)="inputSideNav.toggle()"></i></a>
+        <span class="navbar-brand">Good Morning, <span class="logged-user">Gideon</span> </span>
 
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item current-date">
-                July 14, 2022
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownmenuLink">
-                    <div class="avatar">
-                        <img src="assets/img/avatar.png" alt="User image">
-                    </div>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownmenuLink">
-                    <a class="dropdown-item">Profile</a>
-                    <a class="dropdown-item">Account</a>
-                    <a class="dropdown-item">Logout</a>
-                </div>
-            </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item current-date">
+                    July 14, 2022
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="avatar">
+                            <img src="assets/img/avatar.png" alt="User image">
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end dropdown-menu-lg-end" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Account</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
